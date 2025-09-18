@@ -7,9 +7,9 @@ import { useClerk,  UserButton  } from '@clerk/clerk-react';
 const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Card', path: '/card' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'About', path: '/about' },
+        { name: 'Card', path: '/#/card' },
+        { name: 'Contact', path: '/#/contact' },
+        { name: 'About', path: '/#/about' },
     ];
 
    const {openSignIn}=useClerk()

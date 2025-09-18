@@ -27,7 +27,7 @@ function Card() {
         <h3 class="text-base text-slate-900 font-medium mt-3">Description: You can write a description of the image.</h3>
         <p class="text-xs text-indigo-600 font-medium mt-1 py-6">
            price : 120$ </p>
-        <a href='/newpage' class='py-3 px-7 text-white bg-pink-400 hover:bg-pink-200 rounded-full self-center drop-shadow-lg'>Call Me</a>
+        <a href='/#/newpage' class='py-3 px-7 text-white bg-pink-400 hover:bg-pink-200 rounded-full self-center drop-shadow-lg'>Call Me</a>
     </div>
     <div class="max-w-72 w-full hover:-translate-y-0.5 transition duration-300 shadow-lg px-6 py-6 rounded-2xl ">
         <img class="rounded-xl w-3xl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqYbOH_Brl2YwpeA9AXrH2kCHHoPs5XMlf8g&s" alt=""/>
