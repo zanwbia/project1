@@ -4,7 +4,7 @@ function Newpage() {
   return (
     <div className='mt-7'>
      <h1 class="text-3xl font-semibold text-center mx-auto">Our Latest Creations</h1>
-<p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">A visual collection of our most recent works - each piece crafted with intention, emotion, and style.</p>
+<p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">Description: You can write a description of the image.</p>
 <div class="flex items-center gap-2 h-[400px] w-full max-w-4xl mt-10 mx-auto">
     <div class="relative group flex-grow transition-all w-56 rounded-lg overflow-hidden h-[400px] duration-500 hover:w-full">
         <img class="h-full w-full object-cover object-center"

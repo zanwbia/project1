@@ -35,7 +35,7 @@ function Testimonials() {
    <section className='py-16 bg-gray-50 '>
 <div className='max-w-6xl mx-auto px-20 text-center'>
      <h2 className='text-3xl text-black font-bold'> what our gests say</h2>
-     <p className='text-gray-600 mb-10 max-w-2xl mx-auto'> jghgjhgfkhfhjfyfyffjhjkggggggggggggggggfddfjjbvsdrtyuikjnbvcxdtyhj</p>
+     <p className='text-gray-600 mb-10 max-w-2xl mx-auto'> Description: You can write a description </p>
 
 <div className='grid md:grid-cols-3 gap-6'>
     {testimonials.map((t,index)=>(
