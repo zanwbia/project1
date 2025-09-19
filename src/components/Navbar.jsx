@@ -92,10 +92,10 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-
+                   <Link to='/newpage'>
                     <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
                         New Launch
-                    </button>
+                    </button></Link>
 
                     <button onClick={openSignIn} className="bg-pink-400 text-white px-8 py-2.5 rounded-full transition-all duration-500">
                         Login
