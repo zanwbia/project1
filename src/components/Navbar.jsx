@@ -64,8 +64,8 @@ const Navbar = () => {
                         <line x1="21" y1="21" x2="16.65" y2="16.65" />
                     </svg>
                     <button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 hover:bg-pink-300 ${isScrolled ? "text-white bg-pink-500" : "bg-pink-500 text-white "}`}>
+
                         Login
-                     
                     </button>
                 </div>
 
@@ -88,11 +88,11 @@ const Navbar = () => {
                     </button>
 
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} onClick={() => setIsMenuOpen(false)}>
+                        <Link key={i} to={link.path} onClick={() => setIsMenuOpen(false)}>
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
-                   <Link to='/newpage'>
+                  <Link to='/newpage'>
                     <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
                         New Launch
                     </button></Link>
