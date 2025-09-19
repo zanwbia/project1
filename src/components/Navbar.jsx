@@ -7,9 +7,9 @@ import { useClerk,  UserButton  } from '@clerk/clerk-react';
 const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Card', path: '/#/card' },
-        { name: 'Contact', path: '/#/contact' },
-        { name: 'About', path: '/#/about' },
+        { name: 'Card', path: '/card' },
+        { name: 'Contact', path: '/contact' },
+        { name: 'About', path: '/about' },
     ];
 
    const {openSignIn}=useClerk()
@@ -46,10 +46,10 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-pink-600"}`}>
+                        <Link key={i} to={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-pink-600"}`}>
                             {link.name}
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-pink-600"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
-                        </a>
+                        </Link>
                     ))}
                     <Link to='/newpage'>
                     <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer hover:text-pink-300 ${isScrolled ? 'text-pink-400' : 'text-pink-600'} transition-all`}>
